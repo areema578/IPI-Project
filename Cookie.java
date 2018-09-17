@@ -6,7 +6,12 @@ public class Cookie extends DessertItem{
     
     public Cookie() {
         qty = 1;
-        pricePerDozen = 5.00;
+        pricePerDozen = 1.00;
+    }
+    
+    public Cookie(double pricePerDozen, int qty ) {
+        this.qty = qty;
+        this.pricePerDozen = pricePerDozen;
     }
 
     public double getCost(){
