@@ -11,8 +11,8 @@ public class Sundae extends IceCream{
     int qty;
     
     public Sundae() {
-        this.priceTopping = 1.00;
-        this.qty = 1;
+        priceTopping = 1.00;
+        qty = 1;
     }
     public Sundae(double priceTopping, int qty) {
         this.priceTopping = priceTopping;

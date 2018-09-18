@@ -11,8 +11,8 @@ public class IceCream extends DessertItem{
     int qty;
     
     public IceCream() {
-        this.pricePer = 1;
-        this.qty =1;
+        pricePer = 1;
+        qty =1;
     }
     
     public IceCream(double pricePer, int qty) {

@@ -13,14 +13,16 @@ public abstract class DessertItem {
  * Null constructor for DessertItem class
  */
   public DessertItem() {
-    this("");
+    name = "";
   }
+  
 /**
  * Initializes DessertItem data
  */
   public DessertItem(String name) {
       this.name = name;
-      }
+  }
+  
 /**
  * Returns name of DessertItem
  * @return name of DessertItem
@@ -28,6 +30,7 @@ public abstract class DessertItem {
   public final String getName() {
     return name;
   }
+  
 /**
  * Returns cost of DessertItem
  * @return cost of DessertItem

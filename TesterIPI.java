@@ -27,9 +27,10 @@ public class TesterIPI {
         } else if (selection == 3) {
             
         }
+        in.close();
         }while (selection == 4);
-
-
-
+        
+        
+       
     }
 }
