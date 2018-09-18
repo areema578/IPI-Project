@@ -1,5 +1,13 @@
 package projectIPI;
 
+/**	
+ * Scott Arima and Howard Chen
+ * 18 Sep 2018
+ * Purpose of the program - 
+ * Inputs: 
+ * Output: 
+ */
+
 public class IceCream extends DessertItem{
     double pricePer;
     int qty;

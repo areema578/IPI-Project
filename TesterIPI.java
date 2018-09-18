@@ -1,9 +1,12 @@
 package projectIPI;
 
 import java.util.Scanner;
-/**
- *
- * @author howar
+/**	
+ * Scott Arima and Howard Chen
+ * 18 Sep 2018
+ * Purpose of the program - 
+ * Inputs: 
+ * Output: 
  */
 public class TesterIPI {
     
@@ -24,7 +27,7 @@ public class TesterIPI {
         } else if (selection == 3) {
             
         }
-        }while selection = 4
+        }while (selection == 4);
 
 
 
