@@ -1,6 +1,5 @@
 package projectIPI;
 import java.util.ArrayList;
-
 /**	
  * Scott Arima and Howard Chen
  * 18 Sep 2018
@@ -8,7 +7,6 @@ import java.util.ArrayList;
  * Inputs: 
  * Output: 
  */
-
 public class Checkout {
     static int numberOfItems;
     double totalCost = 0, totalTax = 0;

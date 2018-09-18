@@ -1,5 +1,4 @@
 package projectIPI;
-
 /**	
  * Scott Arima and Howard Chen
  * 18 Sep 2018
@@ -7,7 +6,6 @@ package projectIPI;
  * Inputs: 
  * Output: 
  */
-
 public class Cookie extends DessertItem{
     int qty;
     double pricePerDozen;
