@@ -23,6 +23,14 @@ public abstract class DessertItem implements Comparable{
       this.name = name;
   }
   
+  /**
+   * Sets the dessert item's name
+   * @param name - name as a String
+   */
+  public void setName(String name) {
+	  this.name = name;
+  }
+  
 /**
  * Returns name of DessertItem
  * @return name of DessertItem

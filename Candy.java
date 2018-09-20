@@ -11,7 +11,7 @@ public class Candy extends DessertItem{
     private double pricePerPound;
     
     public Candy(){
-        weight = 1; //lbs
+        weight = 1.00; //lbs
         pricePerPound = 0.89; //$ per lbs
     }
     
