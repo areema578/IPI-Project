@@ -24,7 +24,7 @@ public class Cookie extends DessertItem{
     }
 
     public double getCost(){
-        return this.qty * (this.pricePerDozen/12);
+        return (qty * (pricePerDozen / 12));
     }
     
     public String toString() {

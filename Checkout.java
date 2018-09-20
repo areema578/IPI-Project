@@ -52,7 +52,7 @@ public class Checkout {
         String str = "Number of items: " + numberOfItems + 
         			"\nTotal cost: $" + getTotalCost() + 
         			"\nTotal tax: $" + getTotalTax() +
-                    "Cost + Tax: $" + getTotal() +
+                    "\nCost + Tax: $" + getTotal() +
                     "\n\nM & M Dessert Shoppe\n";
         
         for (DessertItem item : dessertList) {

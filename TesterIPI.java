@@ -63,6 +63,7 @@ public class TesterIPI {
         	}
         }
         }while (selection != 4);
-        
+        System.out.println("Here is your receipt:\n");
+        System.out.println(receipt);
     }
 }
