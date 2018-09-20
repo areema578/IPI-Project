@@ -7,10 +7,9 @@ package projectIPI;
  * Output: 
  */
 public class Sundae extends IceCream{
-    private double toppingCost;
+    private double toppingCost = 0.65;
     
     public Sundae() {
-        toppingCost = 0.65;
     }
     
     public void setToppingCost(double toppingCost) {
@@ -22,7 +21,7 @@ public class Sundae extends IceCream{
     }
     
     public String toString() {
-    	return name + "\t\t\t\t$" + String.format("%.2f", this.getCost());
+    	return name + "\t\t\t$" + String.format("%.2f", this.getCost()) + "\n";
     }
     
 }

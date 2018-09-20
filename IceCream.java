@@ -7,10 +7,9 @@ package projectIPI;
  * Output: 
  */
 public class IceCream extends DessertItem{
-    protected double cost;
+    protected double cost = 1.50;
     
-    public IceCream() { //only has cost
-        cost = 1.50;
+    public IceCream() {
     }
     
     public void setCost(double cost) {
@@ -22,7 +21,7 @@ public class IceCream extends DessertItem{
     }
     
     public String toString() {
-    	return name + "\t\t\t\t$" + String.format("%.2f", this.getCost());
+    	return name + "\t\t\t$" + String.format("%.2f", this.getCost()) + "\n";
     }
 
 }
