@@ -7,20 +7,22 @@ package projectIPI;
  * Output: 
  */
 public class Sundae extends IceCream{
-    private double priceTopping;
-    int qty;
+    private double toppingCost;
     
     public Sundae() {
-        priceTopping = 1.00;
-        qty = 1;
+        toppingCost = 0.65;
     }
-    public Sundae(double priceTopping, int qty) {
-        this.priceTopping = priceTopping;
-        this.qty = qty;
-    }
-    public double getCost() {
     
-        return getCost() + priceTopping ;
+    public void setToppingCost(double toppingCost) {
+    	this.toppingCost = toppingCost;
+    }
+    
+    public double getCost() {
+        return cost + toppingCost;
+    }
+    
+    public String toString() {
+    	return name + "\t\t\t\t$" + String.format("%.2f", this.getCost());
     }
     
 }

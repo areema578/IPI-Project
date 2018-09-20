@@ -6,7 +6,7 @@ package projectIPI;
  * Inputs: 
  * Output: 
  */
-public abstract class DessertItem {
+public abstract class DessertItem implements Comparable{
   protected String name;
 
 /**
@@ -37,4 +37,41 @@ public abstract class DessertItem {
  */
   public abstract double getCost();
 
+  /**
+   * Compares the cost of the dessert item
+   * @param otherItem - the other DessertItem object you are comparing
+   * @return - the dessert item that costs more
+   */
+  @Override
+  public int compareTo(Object otherItem) {
+	  DessertItem item = (DessertItem)otherItem;
+	  if(this.getCost() > item.getCost()) {
+		  return 1;
+	  }else if(this.getCost() < item.getCost()) {
+		  return -1;
+	  }else {
+		  return 0;
+	  }
+  }
+  
+  /**
+   * Uses compareTo method to determine which object has the bigger cost
+   * @param item1 - DessertItem object
+   * @param item2 - DessertItem object
+   * @return the DessertItem that costs more
+   */
+  public static DessertItem max(DessertItem item1, DessertItem item2) {
+	  if(item1.compareTo(item2) > 0) {
+		  return item1; //item1 costs more
+	  }else if(item1.compareTo(item2) < 0) {
+		  return item2; //item2 costs more
+	  }else {
+		  return item1; //same cost so doesn't matter
+	  }
+  }
+  
+  public String toString() {
+	return name;
+  }
+  
 }

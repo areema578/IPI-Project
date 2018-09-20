@@ -7,22 +7,29 @@ package projectIPI;
  * Output: 
  */
 public class Cookie extends DessertItem{
-    int qty;
-    double pricePerDozen;
+    private int qty;
+    private double pricePerDozen;
     
     public Cookie() {
-        qty = 1;
-        pricePerDozen = 1.00;
+        qty = 1; //amount of cookies
+        pricePerDozen = 3.99; //$ per dz
     }
     
-    public Cookie(double pricePerDozen, int qty ) {
+    public Cookie(int qty) {
         this.qty = qty;
-        this.pricePerDozen = pricePerDozen;
+    }
+    
+    public void setCost(double cost) {
+    	pricePerDozen = cost; 
     }
 
     public double getCost(){
         return this.qty * (this.pricePerDozen/12);
     }
     
+    public String toString() {
+		return name + "\t\t\t\t$" + String.format("%.2f", this.getCost()) + "\n" 
+			   + qty + " @ $" + pricePerDozen + " /dz.";	
+    }
 
 }

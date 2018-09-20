@@ -7,20 +7,28 @@ package projectIPI;
  * Output: 
  */
 public class Candy extends DessertItem{
-    double weight;
-    double pricePerPound;
+    private double weight;
+    private double pricePerPound;
     
     public Candy(){
-        weight = 1;
-        pricePerPound = 1;
+        weight = 1; //lbs
+        pricePerPound = 0.89; //$ per lbs
     }
     
-    public Candy( double weight, double pricePerPound){
+    public Candy(double weight){
         this.weight = weight;
-        this.pricePerPound = pricePerPound;
     }
+    
+    public void setCost(double cost) {
+    	pricePerPound = cost; 
+    }
+    
     public double getCost(){
         return this.weight * this.pricePerPound;
     }
     
+    public String toString() {
+		return name + "\t\t\t\t$" + String.format("%.2f", this.getCost()) + "\n" 
+			   + weight + "lbs. @ $" + pricePerPound + " /lb.";
+    }
 }

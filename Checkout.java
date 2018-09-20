@@ -8,34 +8,38 @@ import java.util.ArrayList;
  * Output: 
  */
 public class Checkout {
-    static int numberOfItems;
-    double totalCost = 0, totalTax = 0;
-    double taxRate = .095;
-    double total = totalCost + totalTax;
-    static ArrayList<DessertItem> dessertList = new ArrayList<DessertItem>();
+    private static int numberOfItems;
+    private static double totalCost = 0, totalTax = 0;
+    private static double taxRate = .095;
+    private static ArrayList<DessertItem> dessertList = new ArrayList<DessertItem>();
     
     
     public void enterItem(DessertItem d) {
         dessertList.add(d);
-        this.numberOfItems++;
+        totalCost += d.getCost();
+        totalTax = totalCost * taxRate;
+        numberOfItems++;
     }
     
     public void clearCashRegister() {
         dessertList.clear();
-        this.numberOfItems = 0;
+        numberOfItems = 0;
     }
     
-    public double getTotalCost() {
-        for (DessertItem d : dessertList) {
-            this.totalCost += d.getCost();
-        }
-        
-        return this.totalCost;
+    public int getNumberOfItems() {
+    	return numberOfItems;
     }
-    public double getTotalTax() {
-        this.totalTax = getTotalCost() * taxRate;
-        
-        return this.totalTax;
+    
+    public String getTotalCost() {
+        return String.format("%.2f", totalCost);
+    }
+    
+    public String getTotalTax() {
+        return String.format("%.2f", totalTax);
+    }
+    
+    public String getTotal() {
+    	return String.format("%.2f", totalCost + totalTax);
     }
     
     
@@ -44,15 +48,18 @@ public class Checkout {
     * @return 
     */
     public String toString() {
+    	String receiptItems = "";
+        String str = "Number of items: " + numberOfItems + 
+        			"\nTotal cost: $" + getTotalCost() + 
+        			"\nTotal tax: $" + getTotalTax() +
+                    "Cost + Tax: $" + getTotal() +
+                    "\n\nM & M Dessert Shoppe\n";
         
-        String str = "Number of items: " + numberOfItems + "\n" +
-                    "Toal cost: " + totalCost + "\nTotal tax: " + totalTax +
-                "Cost + Tax: " + total;
+        for (DessertItem item : dessertList) {
+        	receiptItems += item;
+        }
         
-        
-        
-        
-        return  str;
+        return  str + receiptItems;
         
     }
 }
