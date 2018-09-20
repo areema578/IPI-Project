@@ -25,8 +25,10 @@ public class Candy extends DessertItem{
         return (weight * pricePerPound);
     }
     
+    //"%-36s%3d(@%1s)%8s"
     public String toString() {
-		return name + "\t\t\t\t$" + String.format("%.2f", this.getCost()) + "\n" 
+    	String cost = "$" + String.format("%.2f", this.getCost());
+		return name + String.format("%-36s", cost) + "\n" 
 			   + String.format("%.2f", weight) + " lbs. @ $" + pricePerPound + " /lb.\n";
     }
 }

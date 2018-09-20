@@ -14,11 +14,11 @@ public class TesterIPI {
     	Checkout receipt = new Checkout();
         int selection;
         do {
-        System.out.println("Make a selection from our Dessert Menu" 
-        		+ "\n1. Candy- 89 cents a lb" 
-        		+ "\n2. Cookie- $3.99 per dozen" 
-        		+ "\n3. Ice cream- $1.50"
-                + "\n4. Done.");
+        System.out.println("Make a selection from our Dessert Menu:" 
+        		+ "\n1. Candy- 89 cents a lb." 
+        		+ "\n2. Cookie- $3.99 per dz." 
+        		+ "\n3. Ice cream- $1.50."
+                + "\n4. Get your receipt.");
         Scanner in = new Scanner(System.in);
         selection = in.nextInt();
         Scanner pick = new Scanner(System.in);
