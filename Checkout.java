@@ -31,15 +31,15 @@ public class Checkout {
     }
     
     public String getTotalCost() {
-        return String.format("%.2f", totalCost);
+        return "$" + String.format("%.2f", totalCost);
     }
     
     public String getTotalTax() {
-        return String.format("%.2f", totalTax);
+        return "$" + String.format("%.2f", totalTax);
     }
     
     public String getTotal() {
-    	return String.format("%.2f", totalCost + totalTax);
+    	return "$" + String.format("%.2f", totalCost + totalTax);
     }
     
     
@@ -50,16 +50,19 @@ public class Checkout {
     public String toString() {
     	String receiptItems = "";
         String str = "Number of items: " + numberOfItems + 
-        			"\nTotal cost: $" + getTotalCost() + 
-        			"\nTotal tax: $" + getTotalTax() +
-                    "\nCost + Tax: $" + getTotal() +
-                    "\n\nM & M Dessert Shoppe\n";
+        			"\nTotal cost: " + getTotalCost() + 
+        			"\nTotal tax: " + getTotalTax() +
+                    "\nCost + Tax: " + getTotal() +
+                    "\n\nM & M Dessert Shoppe\n--------------------\n";
         
         for (DessertItem item : dessertList) {
         	receiptItems += item;
         }
         
-        return  str + receiptItems;
+        String receiptTax = String.format("\n%-24s%8s\n", "Tax", getTotalTax());
+        String receiptCost = String.format("%-24s%8s\n", "Total Cost", getTotal());
+        
+        return  str + receiptItems + receiptTax + receiptCost;
         
     }
 }
