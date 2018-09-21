@@ -2,9 +2,9 @@ package projectIPI;
 /**	
  * Scott Arima and Howard Chen
  * 18 Sep 2018
- * Purpose of the program - 
- * Inputs: 
- * Output: 
+ * Purpose of the program - To order desserts and to print out the receipt
+ * Inputs: Dessert selections
+ * Output: Dessert receipt displaying all items and differents costs
  */
 public class IceCream extends DessertItem{
     protected double cost = 1.50;

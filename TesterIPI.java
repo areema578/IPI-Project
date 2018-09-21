@@ -4,9 +4,9 @@ import java.util.Scanner;
 /**	
  * Scott Arima and Howard Chen
  * 18 Sep 2018
- * Purpose of the program - 
- * Inputs: 
- * Output: 
+ * Purpose of the program - To order desserts and to print out the receipt
+ * Inputs: Dessert selections
+ * Output: Dessert receipt displaying all items and differents costs
  */
 public class TesterIPI {
     
@@ -15,7 +15,7 @@ public class TesterIPI {
         int selection;
         do {
         System.out.println("Make a selection from our Dessert Menu:" 
-        		+ "\n1. Candy- 89 cents a lb." 
+        		+ "\n1. Candy- 89 cents per lb." 
         		+ "\n2. Cookie- $3.99 per dz." 
         		+ "\n3. Ice cream- $1.50."
                 + "\n4. Get your receipt.");
