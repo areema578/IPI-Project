@@ -22,7 +22,7 @@ public class IceCream extends DessertItem{
     
     public String toString() {
     	String cost = "$" + String.format("%.2f", this.getCost());
-    	return name + String.format("%-36s", cost) + "\n";
+    	return String.format("%-24s%8s\n", name, cost);
     }
 
 }
