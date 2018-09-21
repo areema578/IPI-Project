@@ -43,7 +43,7 @@ public class TesterIPI {
             System.out.println("Added " + cookieType);
         } else if (selection == 3) {
         	Scanner choice = new Scanner(System.in);
-        	System.out.println("Which ice cream would you like: ");
+        	System.out.println("What ice cream flavor would you like: ");
         	String iceCreamFlavor = pick.nextLine().trim();
         	System.out.println("Would you like to make your ice cream a sundae for 65 cents more?\nEnter yes or no."); 
         	String input = choice.nextLine().trim();
@@ -52,14 +52,14 @@ public class TesterIPI {
         		System.out.println("What topping would you like: ");
         		String sundaeTopping = sundaeChoice.nextLine().trim();
             	DessertItem sundae = new Sundae();
-            	sundae.setName(sundaeTopping + " Sundae with\n" + iceCreamFlavor);
+            	sundae.setName(sundaeTopping + " Sundae with\n" + iceCreamFlavor + " Ice Cream");
             	receipt.enterItem(sundae);
-                System.out.println("Added " + sundaeTopping + " Sundae with " + iceCreamFlavor);
+                System.out.println("Added " + sundaeTopping + " Sundae with " + iceCreamFlavor + " Ice Cream");
         	}else {
         		DessertItem iceCream = new IceCream();
-        		iceCream.setName(iceCreamFlavor);
+        		iceCream.setName(iceCreamFlavor + " Ice Cream");
         		receipt.enterItem(iceCream);
-                System.out.println("Added " + iceCreamFlavor);
+                System.out.println("Added " + iceCreamFlavor + " Ice Cream");
         	}
         }
         }while (selection != 4);
