@@ -27,7 +27,7 @@ public class Cookie extends DessertItem{
     
     public String toString() {
     	String cost = "$" + String.format("%.2f", this.getCost());
-    	return String.format("%-24s%8s\n%1d @ %.2f /dz.\n", name, cost, qty, pricePerDozen);	
+    	return String.format("%1d @ %.2f /dz.\n%-24s%8s\n", qty, pricePerDozen, name, cost);	
     }
 
 }
