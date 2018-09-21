@@ -60,7 +60,7 @@ public class MaxTest {
         System.out.println(DessertItem.max(snickers, starBurst).name + " cost more.\n");
         
         
-        System.out.println("4th Comparison Test");
+        System.out.println("5th Comparison Test");
 
         System.out.println("Price of 10 Strawberry Chococalte Sundaes @$"
         		+ String.format("$%.2f",berryChoc.getCost()) +" vs. "
