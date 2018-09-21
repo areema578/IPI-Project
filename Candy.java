@@ -12,9 +12,12 @@ public class Candy extends DessertItem{
     
     public Candy(){
     }
-    
     public Candy(double weight){
         this.weight = weight;
+    }
+    public Candy(double weight, String name){
+        this.weight = weight;
+        this.name = name;
     }
     
     public void setCost(double cost) {
@@ -25,10 +28,14 @@ public class Candy extends DessertItem{
         return (weight * pricePerPound);
     }
     
+    public void setWeight(double weight) {
+    	this.weight = weight;
+    }
+    
     //"%-36s%3d(@%1s)%8s"
     public String toString() {
     	String cost = "$" + String.format("%.2f", this.getCost());
     	String weightString = String.format("%.2f", weight);
-    	return String.format("%1s lbs. @ %.2f /lb.\n%-24s%8s\n", weightString, pricePerPound, name, cost);
+    	return String.format("%1s lbs. @ %.2f /lb.\n%-24s%8s\n", weightString, pricePerPound,name, cost);
     }
 }

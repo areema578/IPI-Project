@@ -25,9 +25,13 @@ public class Cookie extends DessertItem{
         return (qty * (pricePerDozen / 12));
     }
     
+    public void setQty(int qty) {
+    	this.qty = qty;
+    }
+    
     public String toString() {
     	String cost = "$" + String.format("%.2f", this.getCost());
-    	return String.format("%1d @ %.2f /dz.\n%-24s%8s\n", qty, pricePerDozen, name, cost);	
+    	return String.format("%1d @ %.2f /dz.\n%-24s%8s\n", qty, pricePerDozen,name, cost);	
     }
 
 }

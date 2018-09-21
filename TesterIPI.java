@@ -14,7 +14,7 @@ public class TesterIPI {
     	Checkout receipt = new Checkout();
         int selection;
         do {
-        System.out.println("Make a selection from our Dessert Menu (pick a number):" 
+        System.out.println("Make a selection from our Dessert Menu:" 
         		+ "\n1. Candy- 89 cents per lb." 
         		+ "\n2. Cookie- $3.99 per dz." 
         		+ "\n3. Ice cream- $1.50."

@@ -8,8 +8,14 @@ package projectIPI;
  */
 public class IceCream extends DessertItem{
     protected double cost = 1.50;
+    private int qty = 1;
     
     public IceCream() {
+    }
+    
+    public IceCream(int qty, String name) {
+    	this.qty = qty;
+    	this.name = name;
     }
     
     public void setCost(double cost) {
@@ -17,7 +23,7 @@ public class IceCream extends DessertItem{
     }
     
     public double getCost() {
-        return this.cost;
+        return this.cost * qty;
     }
     
     public String toString() {
