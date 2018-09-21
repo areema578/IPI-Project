@@ -9,15 +9,19 @@ package projectIPI;
 public class Sundae extends IceCream{
     private double toppingCost = 0.65;
     
+    
     public Sundae() {
     }
-    
+    public Sundae(int qty, String name) {
+    	this.qty = qty;
+    	this.name = name;
+    }
     public void setToppingCost(double toppingCost) {
     	this.toppingCost = toppingCost;
     }
     
     public double getCost() {
-        return cost + toppingCost;
+        return ((qty * cost) + toppingCost);
     }
     
     public String toString() {

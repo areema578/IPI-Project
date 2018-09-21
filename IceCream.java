@@ -8,7 +8,7 @@ package projectIPI;
  */
 public class IceCream extends DessertItem{
     protected double cost = 1.50;
-    private int qty = 1;
+    protected int qty = 1;
     
     public IceCream() {
     }
