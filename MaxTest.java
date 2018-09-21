@@ -6,9 +6,12 @@
 package projectIPI;
 import java.util.ArrayList;
 import java.util.Scanner;
-/**
- *
- * @author howar
+/**	
+ * Scott Arima and Howard Chen
+ * 18 Sep 2018
+ * Purpose of the program - To order desserts and to print out the receipt
+ * Inputs: Dessert selections
+ * Output: Dessert receipt displaying all items and differents costs
  */
 public class MaxTest {
     
