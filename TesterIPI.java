@@ -6,7 +6,7 @@ import java.util.Scanner;
  * 18 Sep 2018
  * Purpose of the program - To order desserts and to print out the receipt
  * Inputs: Dessert selections
- * Output: Dessert receipt displaying all items and differents costs
+ * Output: Dessert receipt displaying all items and different costs
  */
 public class TesterIPI {
     

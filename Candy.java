@@ -4,11 +4,11 @@ package projectIPI;
  * 18 Sep 2018
  * Purpose of the program - To order desserts and to print out the receipt
  * Inputs: Dessert selections
- * Output: Dessert receipt displaying all items and differents costs
+ * Output: Dessert receipt displaying all items and different costs
  */
 public class Candy extends DessertItem{
-    private double weight = 1.00;
-    private double pricePerPound = 0.89;
+    private double weight = 1.00; // weight of candy defaulted to 1.00 lb
+    private double pricePerPound = 0.89; // price per lb of candy.
     
     /**
      * candy constructor with default weight and price Per pound

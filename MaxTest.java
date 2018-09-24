@@ -11,7 +11,7 @@ import java.util.Scanner;
  * 18 Sep 2018
  * Purpose of the program - To order desserts and to print out the receipt
  * Inputs: Dessert selections
- * Output: Dessert receipt displaying all items and differents costs
+ * Output: Dessert receipt displaying all items and different costs
  */
 public class MaxTest {
     
@@ -44,38 +44,39 @@ public class MaxTest {
         
         
         System.out.println("3rd Comparison Test");
-        System.out.println("Price of 2 Strawberry Ice Cream @$"
+        System.out.println("Price of 2 Strawberry Ice Cream @"
         		+ String.format("$%.2f",strawberry.getCost()) +" vs. "
-                + "20 Vanilla Icecream @$" + String.format("$%.2f",vanilla.getCost()));
+                + "20 Vanilla Icecream @" + String.format("$%.2f",vanilla.getCost()));
 
         System.out.println("\n---comparing---\n");
         System.out.println(DessertItem.max(strawberry, vanilla));
         
         System.out.println("4th Comparison Test");
 
-        System.out.println("Price of 500 lbs of Snickers @$"
+        System.out.println("Price of 500 lbs of Snickers @"
         		+ String.format("$%.2f",snickers.getCost()) +" vs. "
-                + "200 lbs of Starburst @$" + String.format("$%.2f",starBurst.getCost()));
+                + "200 lbs of Starburst @" + String.format("$%.2f",starBurst.getCost()));
         System.out.println("\n---comparing---\n");
         System.out.println(DessertItem.max(snickers, starBurst).name + " cost more.\n");
         
         
         System.out.println("5th Comparison Test");
 
-        System.out.println("Price of 10 Strawberry Chococalte Sundaes @$"
+        System.out.println("Price of 10 Strawberry Chococalte Sundaes @"
         		+ String.format("$%.2f",berryChoc.getCost()) +" vs. "
-                + "200 lbs of Starburst @$" + String.format("$%.2f",starBurst.getCost()));
+                + "200 lbs of Starburst @" + String.format("$%.2f",starBurst.getCost()));
         System.out.println("\n---comparing---\n");
         System.out.println(DessertItem.max(berryChoc, starBurst).name + " cost more.\n");
         
         System.out.println("--Sorting ArrayList Test--\n");
         ArrayList<DessertItem> DessertList = new ArrayList<DessertItem>(); // creates DessertList
-        DessertList.add(snickers); // adds Dessert Items to ArrayList
+        DessertList.add(snickers); // adds DessertItems to ArrayList
         DessertList.add(cookie);
         DessertList.add(strawberry);
         DessertList.add(vanilla);
         DessertList.add(twizzlers);
         DessertList.add(berryChoc);
+        
         
         
         //prints Dessert items in ArrayList out of order
@@ -105,9 +106,6 @@ public class MaxTest {
         for( DessertItem x : DessertList) {
         	System.out.println(" "+ x.name + " @" + String.format("$%.2f",x.getCost()));
         }
-        
-        
-        
         
     }
 }

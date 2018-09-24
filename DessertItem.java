@@ -4,7 +4,7 @@ package projectIPI;
  * 18 Sep 2018
  * Purpose of the program - To order desserts and to print out the receipt
  * Inputs: Dessert selections
- * Output: Dessert receipt displaying all items and differents costs
+ * Output: Dessert receipt displaying all items and different costs
  */
 public abstract class DessertItem implements Comparable{
   protected String name;
