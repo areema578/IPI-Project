@@ -9,6 +9,8 @@ package projectIPI;
 public class Cookie extends DessertItem{
     private int qty = 1; // qty of Cookies bought
     private double pricePerDozen = 3.99; // price per dozen of cookies 
+    private int caloriesPerDozen = 142;
+    
     
     /**
      * constructor for default constructor with qty of 1 cookie at 3.99 each
@@ -34,6 +36,15 @@ public class Cookie extends DessertItem{
      */
     public double getCost(){
         return (qty * (pricePerDozen / 12));
+    }
+    
+
+    /**
+     * this method calculates and gets the total calories of cookies purchased
+     * @return - the integer amount of total calories
+     */
+    public int getCalories() {
+    	return(qty * (caloriesPerDozen/12));
     }
     
     /**

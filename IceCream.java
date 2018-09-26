@@ -8,7 +8,7 @@ package projectIPI;
  */
 public class IceCream extends DessertItem{
     protected double cost = 1.50; // cost per icecream 
-    protected int qty = 1; // qty of icecreams purchased
+    protected int calories = 137;
     
     /**
      * default constructor with cost set to 1.50 and qty set to 1.
@@ -20,8 +20,7 @@ public class IceCream extends DessertItem{
      * @param qty - integer qty of ice cream bought
      * @param name - name/type of icecream purchased
      */
-    public IceCream(int qty, String name) {
-    	this.qty = qty;
+    public IceCream(String name) {
     	this.name = name;
     }
     /**
@@ -35,7 +34,14 @@ public class IceCream extends DessertItem{
      * this method calculates and gets the cost of icecream bought
      */
     public double getCost() {
-        return this.cost * qty;
+        return this.cost;
+    }
+    /**
+     * this method gets the total calories of ice cream purchased
+     * @return - calories- integer number of calories of ice cream order
+     */
+    public int getCalories() {
+    	return calories;
     }
     /**
      * this is a toString method for the ice cream line on the checkout receipt

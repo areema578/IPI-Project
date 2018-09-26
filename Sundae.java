@@ -8,6 +8,7 @@ package projectIPI;
  */
 public class Sundae extends IceCream{
     private double toppingCost = 0.65;// double cost per topping
+    private int caloriesTopping = 89;
     
     /**
      * this is the default constructor 
@@ -20,8 +21,7 @@ public class Sundae extends IceCream{
      * @param qty - integer number of toppings
      * @param name - string of the name of topping purchased
      */
-    public Sundae(int qty, String name) {
-    	this.qty = qty;
+    public Sundae(String name) {
     	this.name = name;
     }
     /**
@@ -36,7 +36,15 @@ public class Sundae extends IceCream{
      * @return cost -cost of toppings combined 
      */
     public double getCost() {
-        return ((qty * cost) + toppingCost);
+        return cost + toppingCost;
+    }
+    
+    /**
+     * this method gets the total calories of Sundae order
+     * @return calories - total calories of Sundae order
+     */
+    public int getCalories() {
+    	return caloriesTopping + calories; 
     }
     /**
      * this is the toString method to print all Sundae information onto checkout receipt

@@ -9,6 +9,7 @@ package projectIPI;
 public class Candy extends DessertItem{
     private double weight = 1.00; // weight of candy defaulted to 1.00 lb
     private double pricePerPound = 0.89; // price per lb of candy.
+    private int caloriesPerLb = 1064; //calorie per lb of candy
     
     /**
      * candy constructor with default weight and price Per pound
@@ -54,6 +55,13 @@ public class Candy extends DessertItem{
      */
     public void setWeight(double weight) {
     	this.weight = weight;
+    }
+    /**
+     * this method calculates the total calories of candy purchased
+     * @return calories - the total amount of calories in an integer
+     */
+    public int getCalories() {
+    	return (int)(caloriesPerLb * weight);
     }
     
     /**

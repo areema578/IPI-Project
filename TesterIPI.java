@@ -31,7 +31,7 @@ public class TesterIPI {
         	DessertItem candy = new Candy(amount);
         	candy.setName(candyName);
         	receipt.enterItem(candy);
-            System.out.println("Added " + candyName);
+            System.out.println("Added " + candyName + "(total calories : " + candy.getCalories() +  ") ");
         } else if (selection == 2) {
         	System.out.println("What cookie would you like? Please enter type of cookie: ");
         	String cookieType = pick.nextLine().trim();
@@ -40,7 +40,7 @@ public class TesterIPI {
         	DessertItem cookie = new Cookie(amount);
         	cookie.setName(cookieType);
         	receipt.enterItem(cookie);
-            System.out.println("Added " + cookieType);
+            System.out.println("Added " + cookieType + "(total calories : " + cookie.getCalories() +  ") ");
         } else if (selection == 3) {
         	Scanner choice = new Scanner(System.in);
         	System.out.println("What ice cream flavor would you like: ");
@@ -54,12 +54,12 @@ public class TesterIPI {
             	DessertItem sundae = new Sundae();
             	sundae.setName(sundaeTopping + " Sundae with\n" + iceCreamFlavor + " Ice Cream");
             	receipt.enterItem(sundae);
-                System.out.println("Added " + sundaeTopping + " Sundae with " + iceCreamFlavor + " Ice Cream");
+                System.out.println("Added " + sundaeTopping + " Sundae with " + iceCreamFlavor + " Ice Cream" + "(total calories : " + sundae.getCalories() +  ") ");
         	}else {
         		DessertItem iceCream = new IceCream();
         		iceCream.setName(iceCreamFlavor + " Ice Cream");
         		receipt.enterItem(iceCream);
-                System.out.println("Added " + iceCreamFlavor + " Ice Cream");
+                System.out.println("Added " + iceCreamFlavor + " Ice Cream" + "(total calories : " + iceCream.getCalories() +  ") ");
         	}
         }
         }while (selection != 4);

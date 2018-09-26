@@ -20,12 +20,13 @@ public class MaxTest {
         
         Candy twizzlers = new Candy(4.00 , "Twizzlers");
         Cookie cookie = new Cookie(12);
-        IceCream strawberry = new IceCream(2,"Strawberry Ice Cream");
-        IceCream vanilla = new IceCream(20, "Vanilla Ice Cream");
+        IceCream strawberry = new IceCream("Strawberry Ice Cream");
+        IceCream vanilla = new IceCream("Vanilla Ice Cream");
         Candy snickers = new Candy(500, "Snickers");
         Candy starBurst = new Candy(200, "Starburst");
-        Sundae berryChoc = new Sundae( 10,"StrawBerry Chocalate Sundae");
+        Sundae berryChoc = new Sundae("StrawBerry Chocalate Sundae");
         
+        //tests with compareTo method uses the max method to compare prices and returns the more expensive Dessert item.
         System.out.println("1st Comparison Test");
         System.out.println("Price of 4 lbs of Twizzlers Candy "
         		+" @" + String.format("$%.2f", twizzlers.getCost())  + " vs. "

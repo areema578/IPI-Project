@@ -8,6 +8,7 @@ package projectIPI;
  */
 public abstract class DessertItem implements Comparable{
   protected String name;
+  protected int calories;
 
 /**
  * Null constructor for DessertItem class
@@ -44,6 +45,12 @@ public abstract class DessertItem implements Comparable{
  * @return cost of DessertItem
  */
   public abstract double getCost();
+  /**
+   * Calculates and returns the amount of Calories of Dessert Item
+   * @return amount of calories in integer form
+   */
+  
+  public abstract int getCalories();
 
   /**
    * Compares the cost of the dessert item
