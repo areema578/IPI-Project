@@ -1,5 +1,3 @@
-package projectIPI;
-import java.util.ArrayList;
 /**	
  * Scott Arima and Howard Chen
  * 18 Sep 2018
@@ -7,6 +5,9 @@ import java.util.ArrayList;
  * Inputs: Dessert selections
  * Output: Dessert receipt displaying all items and different costs
  */
+package projectIPI;
+import java.util.ArrayList;
+
 public class Checkout {
     private static int numberOfItems; // integer number of Items in checkout
     private static double totalCost = 0, totalTax = 0; //total cost of checkout 
@@ -15,7 +16,7 @@ public class Checkout {
     
     /**
      * this method enters/adds a DessertItem object into the checkout 
-     * @param dItem - the dessertItem object to add to checkout
+     * @param dItem  the dessertItem object to add to checkout
      */
     public void enterItem(DessertItem dItem) {
         dessertList.add(dItem);
@@ -33,7 +34,7 @@ public class Checkout {
     }
     /**
      * this method gets the total number of items
-     * @return - integer of number of items in checkout
+     * @return  integer of number of items in checkout
      */
     public int getNumberOfItems() {
     	return numberOfItems;
@@ -41,21 +42,21 @@ public class Checkout {
     
     /**
      * this method gets the sub total cost of checkout
-     * @return - returns string format of dollar amount of total checkout
+     * @return  returns string format of dollar amount of total checkout
      */
     public String getTotalCost() {
         return "$" + String.format("%.2f", totalCost);
     }
     /**
      * this method gets the total tax of checkout
-     * @return - returns the string of total tax of checkout
+     * @return  returns the string of total tax of checkout
      */
     public String getTotalTax() {
         return "$" + String.format("%.2f", totalTax);
     }
     /**
      * this method gets the total cost with combined with tax.
-     * @return - returns string format of checkout total
+     * @return  returns string format of checkout total
      */
     public String getTotal() {
     	return "$" + String.format("%.2f", totalCost + totalTax);
@@ -64,7 +65,7 @@ public class Checkout {
     
    /**
     * gets string format representing a receipt for the dessert items.
-    * @return 
+    * @return string format representing a receipt for the dessert items.
     */
     public String toString() {
     	String receiptItems = "";

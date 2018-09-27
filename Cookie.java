@@ -1,4 +1,3 @@
-package projectIPI;
 /**	
  * Scott Arima and Howard Chen
  * 18 Sep 2018
@@ -6,6 +5,9 @@ package projectIPI;
  * Inputs: Dessert selections
  * Output: Dessert receipt displaying all items and different costs
  */
+
+package projectIPI;
+
 public class Cookie extends DessertItem{
     private int qty = 1; // qty of Cookies bought
     private double pricePerDozen = 3.99; // price per dozen of cookies 
@@ -19,14 +21,14 @@ public class Cookie extends DessertItem{
     }
     /**
      * constructor of cookie with specified qty of cookies bought
-     * @param qty - integer of how many cookies bought
+     * @param qty integer of how many cookies bought
      */
     public Cookie(int qty) {
         this.qty = qty;
     }
     /**
      * this method sets the cost of cookies per dozen
-     * @param cost - double of the cost of the cookies per dozen
+     * @param cost  double of the cost of the cookies per dozen
      */
     public void setCost(double cost) {
     	pricePerDozen = cost; 
@@ -41,7 +43,7 @@ public class Cookie extends DessertItem{
 
     /**
      * this method calculates and gets the total calories of cookies purchased
-     * @return - the integer amount of total calories
+     * @return the integer amount of total calories
      */
     public int getCalories() {
     	return(qty * (caloriesPerDozen/12));
@@ -49,7 +51,7 @@ public class Cookie extends DessertItem{
     
     /**
      * this method sets the qty of cookies purchased
-     * @param qty - the integer amount of cookies purchased.
+     * @param qty the integer amount of cookies purchased.
      */
     public void setQty(int qty) {
     	this.qty = qty;

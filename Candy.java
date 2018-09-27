@@ -1,4 +1,3 @@
-package projectIPI;
 /**	
  * Scott Arima and Howard Chen
  * 18 Sep 2018
@@ -6,6 +5,8 @@ package projectIPI;
  * Inputs: Dessert selections
  * Output: Dessert receipt displaying all items and different costs
  */
+package projectIPI;
+
 public class Candy extends DessertItem{
     private double weight = 1.00; // weight of candy defaulted to 1.00 lb
     private double pricePerPound = 0.89; // price per lb of candy.
@@ -18,15 +19,15 @@ public class Candy extends DessertItem{
     }
     /**
      * Overloaded Candy constructor with specific weight
-     * @param weight - weight specified.
+     * @param weight  weight specified.
      */
     public Candy(double weight){
         this.weight = weight;
     }
     /**
      * Overloaded Candy Constructor with specific weight and name 
-     * @param weight - the weight of the candy 
-     * @param name - the name of the candy
+     * @param weight  the weight of the candy 
+     * @param name  the name of the candy
      */
     public Candy(double weight, String name){
         this.weight = weight;
@@ -36,7 +37,7 @@ public class Candy extends DessertItem{
     /**
      * this is a setter method used to set the cost per lb of candy.
      * Could be used by store manager to change prices.
-     * @param cost - the price per lb to set candy to.
+     * @param cost  price per lb to set candy to.
      */
     public void setCost(double cost) {
     	pricePerPound = cost; 
@@ -51,14 +52,14 @@ public class Candy extends DessertItem{
     
     /**
      * this method is for setting the weight of the purchase of candy
-     * @param weight- weight of candy in lbs
+     * @param weight  weight of candy in lbs
      */
     public void setWeight(double weight) {
     	this.weight = weight;
     }
     /**
      * this method calculates the total calories of candy purchased
-     * @return calories - the total amount of calories in an integer
+     * @return the total amount of calories in an integer
      */
     public int getCalories() {
     	return (int)(caloriesPerLb * weight);

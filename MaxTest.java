@@ -1,11 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package projectIPI;
-import java.util.ArrayList;
-import java.util.Scanner;
 /**	
  * Scott Arima and Howard Chen
  * 18 Sep 2018
@@ -13,6 +5,12 @@ import java.util.Scanner;
  * Inputs: Dessert selections
  * Output: Dessert receipt displaying all items and different costs
  */
+
+
+package projectIPI;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class MaxTest {
     
 

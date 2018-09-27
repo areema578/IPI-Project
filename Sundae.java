@@ -1,4 +1,3 @@
-package projectIPI;
 /**	
  * Scott Arima and Howard Chen
  * 18 Sep 2018
@@ -6,6 +5,8 @@ package projectIPI;
  * Inputs: Dessert selections
  * Output: Dessert receipt displaying all items and different costs
  */
+package projectIPI;
+
 public class Sundae extends IceCream{
     private double toppingCost = 0.65;// double cost per topping
     private int caloriesTopping = 89;
@@ -18,22 +19,21 @@ public class Sundae extends IceCream{
     }
     /**
      * this is an overloading constructor with specified qty and name
-     * @param qty - integer number of toppings
-     * @param name - string of the name of topping purchased
+     * @param name  string of the name of topping purchased
      */
     public Sundae(String name) {
     	this.name = name;
     }
     /**
      * this method sets the price per of the topping.
-     * @param toppingCost- the cost of each topping in dollar amount. 
+     * @param toppingCost-the cost of each topping in dollar amount. 
      */
     public void setToppingCost(double toppingCost) {
     	this.toppingCost = toppingCost;
     }
     /**
      * this method simply caluates the cost of toppings and returns it as a double
-     * @return cost -cost of toppings combined 
+     * @return cost of toppings combined 
      */
     public double getCost() {
         return cost + toppingCost;
@@ -41,7 +41,7 @@ public class Sundae extends IceCream{
     
     /**
      * this method gets the total calories of Sundae order
-     * @return calories - total calories of Sundae order
+     * @return  total calories of Sundae order
      */
     public int getCalories() {
     	return caloriesTopping + calories; 

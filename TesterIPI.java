@@ -1,6 +1,3 @@
-package projectIPI;
-
-import java.util.Scanner;
 /**	
  * Scott Arima and Howard Chen
  * 18 Sep 2018
@@ -8,6 +5,11 @@ import java.util.Scanner;
  * Inputs: Dessert selections
  * Output: Dessert receipt displaying all items and different costs
  */
+package projectIPI;
+
+import java.util.Scanner;
+
+
 public class TesterIPI {
     
     public static void main(String[] args) {

@@ -1,4 +1,3 @@
-package projectIPI;
 /**	
  * Scott Arima and Howard Chen
  * 18 Sep 2018
@@ -6,6 +5,9 @@ package projectIPI;
  * Inputs: Dessert selections
  * Output: Dessert receipt displaying all items and different costs
  */
+
+package projectIPI;
+
 public abstract class DessertItem implements Comparable{
   protected String name;
   protected int calories;
@@ -19,6 +21,7 @@ public abstract class DessertItem implements Comparable{
   
 /**
  * Initializes DessertItem data
+ * @param name of the DessertItem
  */
   public DessertItem(String name) {
       this.name = name;
@@ -26,7 +29,7 @@ public abstract class DessertItem implements Comparable{
   
   /**
    * Sets the dessert item's name
-   * @param name - name as a String
+   * @param name name as a String
    */
   public void setName(String name) {
 	  this.name = name;
@@ -54,8 +57,8 @@ public abstract class DessertItem implements Comparable{
 
   /**
    * Compares the cost of the dessert item
-   * @param otherItem - the other DessertItem object you are comparing
-   * @return - the dessert item that costs more
+   * @param otherItem  the other DessertItem object you are comparing
+   * @return  the dessert item that costs more
    */
   @Override
   public int compareTo(Object otherItem) {
@@ -71,8 +74,8 @@ public abstract class DessertItem implements Comparable{
   
   /**
    * Uses compareTo method to determine which object has the bigger cost
-   * @param item1 - DessertItem object
-   * @param item2 - DessertItem object
+   * @param item1  DessertItem object
+   * @param item2  DessertItem object
    * @return the DessertItem that costs more
    */
   public static DessertItem max(DessertItem item1, DessertItem item2) {
